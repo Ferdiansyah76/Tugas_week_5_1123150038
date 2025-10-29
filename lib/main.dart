@@ -29,21 +29,57 @@ class MyHome extends StatelessWidget {
         title: Text(
           "Latihan Aplikasi",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 2, 2),
+            color: const Color.fromARGB(255, 139, 97, 97),
             fontWeight: FontWeight.bold,
             fontSize: 17,
           ),
         ),
         backgroundColor: const Color.fromARGB(255, 227, 114, 48),
         actions: [
-          Icon(Icons.person, color: const Color.fromARGB(255, 255, 0, 0)),
+          Icon(Icons.person, color: const Color.fromARGB(255, 139, 97, 97)),
           SizedBox(width: 10),
-          Icon(Icons.account_tree, color: const Color.fromARGB(255, 255, 0, 0)),
+          Icon(Icons.account_tree, color: const Color.fromARGB(255, 139, 97, 97)),
           SizedBox(width: 10),
-          Icon(Icons.ac_unit, color: const Color.fromARGB(255, 255, 0, 0)),
+          Icon(Icons.ac_unit, color: const Color.fromARGB(255, 139, 97, 97)),
           SizedBox(width: 20),
         ],
+      ),
+      body: Column(
+        children: [
+          Container(
+            width: 120,
+            height: 120,
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(15),
 
+            decoration: BoxDecoration(
+              color: Colors.lightBlueAccent,
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color.fromARGB(255, 33, 1, 129),
+                  const Color.fromARGB(255, 41, 77, 31),
+                ],
+              ),
+              image: DecorationImage(
+                image: AssetImage("assets/images/joker.jpg"),
+                fit: BoxFit.cover,
+              ),
+              borderRadius: BorderRadius.circular(15),
+            ),
+
+            child: Text(
+              "Torahh..!!",
+
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 0, 0),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
