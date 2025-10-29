@@ -112,6 +112,41 @@ class MyHome extends StatelessWidget {
               ),
             ),
           ),
+          
+          Container(
+            width: 120,
+            height: 120,
+            alignment: Alignment.center,
+            margin: EdgeInsets.all(15),
+
+            decoration: BoxDecoration(
+              color: Colors.lightBlueAccent,
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color.fromARGB(255, 33, 1, 129),
+                  const Color.fromARGB(255, 41, 77, 31),
+                ],
+              ),
+              image: DecorationImage(
+                image: AssetImage("assets/images/joker.jpg"),
+                fit: BoxFit.cover,
+              ),
+              borderRadius: BorderRadius.circular(15),
+            ),
+
+            child: Text(
+              "Jinzou..!!",
+
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: const Color.fromARGB(255, 255, 0, 0),
+              ),
+            ),
+          ),
+
         ],
       ),
     );
