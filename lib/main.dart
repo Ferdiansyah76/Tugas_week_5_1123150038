@@ -79,6 +79,39 @@ class MyHome extends StatelessWidget {
               ),
             ),
           ),
+
+          Transform.rotate(
+            angle: 0.2,
+            child: Container(
+              width: 120,
+              height: 120,
+              alignment: Alignment.center,
+              margin: EdgeInsets.all(15),
+
+              decoration: BoxDecoration(
+                color: Colors.lightBlueAccent,
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    const Color.fromARGB(255, 25, 13, 141),
+                    const Color.fromARGB(255, 12, 120, 0),
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(15),
+              ),
+
+              child: Text(
+                "Hii..!!",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: const Color.fromARGB(255, 255, 0, 0),
+                  decoration: TextDecoration.underline,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
