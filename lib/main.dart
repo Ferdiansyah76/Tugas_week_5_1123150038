@@ -147,6 +147,42 @@ class MyHome extends StatelessWidget {
             ),
           ),
 
+          Center(
+            child: Transform.rotate(
+              angle: -0.2,
+              child: Container(
+                width: 120,
+                height: 120,
+                alignment: Alignment.center,
+                margin: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  color: Colors.lightBlueAccent,
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Color.fromARGB(255, 23, 120, 12),
+                      Color.fromARGB(255, 7, 10, 147),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/joker.jpg"), 
+                    fit: BoxFit.cover,
+                    ),
+                ),
+                child: Text(
+                  "Sen-ii..!!",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 255, 0, 0),
+                    decoration: TextDecoration.lineThrough,
+                  )
+                ),
+              )
+            ),        
+          ),
         ],
       ),
     );
